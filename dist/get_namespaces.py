@@ -16,7 +16,7 @@ namespaces = api.list_namespace()
 # create output list
 items = []
 
-for i,ns in enumerate(namespaces.items):
+for ns in namespaces.items:
   tempdict = {}
   tempdict['title'] = ns.metadata.name
   tempdict['subtitle'] = ns.status.phase

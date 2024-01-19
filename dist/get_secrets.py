@@ -11,28 +11,22 @@ config.load_kube_config()
 
 # get namespaces
 api = client.CoreV1Api()
-pods = api.list_namespaced_pod(namespace)
+secrets = api.list_namespaced_secret(namespace)
 
 # create output list
 items = []
-pod_status_index = 0
 
-for pod in pods.items:
+for secret in secrets.items:
   tempdict = {}
-  tempdict['title'] = pod.metadata.name
-  tempdict['arg'] = pod.metadata.name
-  tempdict['icon'] = {'path':'./resources/pod.png'}
-
-  for i,cond in enumerate(pod.status.conditions):
-    if cond.type == 'Ready':
-      pod_status_index = i
-
-  tempdict['subtitle'] = 'Ready: {}'.format(pod.status.conditions[pod_status_index].status)
+  tempdict['title'] = secret.metadata.name
+  tempdict['subtitle'] = 'Type: {}, Data: {}'.format(secret.type,len(secret.data))
+  tempdict['arg'] = secret.metadata.name
+  tempdict['icon'] = {'path':'./resources/secret.png'}
   items.append(tempdict)
 
 if len(items) == 0:
   tempdict = {}
-  tempdict['title'] = 'No pods in {}'.format(namespace)
+  tempdict['title'] = 'No secrets in {}'.format(namespace)
   tempdict['arg'] = 'none'
   items.append(tempdict)
 

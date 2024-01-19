@@ -11,28 +11,22 @@ config.load_kube_config()
 
 # get namespaces
 api = client.CoreV1Api()
-pods = api.list_namespaced_pod(namespace)
+configmaps = api.list_namespaced_config_map(namespace)
 
 # create output list
 items = []
-pod_status_index = 0
 
-for pod in pods.items:
+for cm in configmaps.items:
   tempdict = {}
-  tempdict['title'] = pod.metadata.name
-  tempdict['arg'] = pod.metadata.name
-  tempdict['icon'] = {'path':'./resources/pod.png'}
-
-  for i,cond in enumerate(pod.status.conditions):
-    if cond.type == 'Ready':
-      pod_status_index = i
-
-  tempdict['subtitle'] = 'Ready: {}'.format(pod.status.conditions[pod_status_index].status)
+  tempdict['title'] = cm.metadata.name
+  tempdict['subtitle'] = 'Data: {}'.format(len(cm.data))
+  tempdict['arg'] = cm.metadata.name
+  tempdict['icon'] = {'path':'./resources/cm.png'}
   items.append(tempdict)
 
 if len(items) == 0:
   tempdict = {}
-  tempdict['title'] = 'No pods in {}'.format(namespace)
+  tempdict['title'] = 'No configmaps in {}'.format(namespace)
   tempdict['arg'] = 'none'
   items.append(tempdict)
 

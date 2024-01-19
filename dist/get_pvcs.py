@@ -11,28 +11,22 @@ config.load_kube_config()
 
 # get namespaces
 api = client.CoreV1Api()
-pods = api.list_namespaced_pod(namespace)
+pvcs = api.list_namespaced_persistent_volume_claim(namespace)
 
 # create output list
 items = []
-pod_status_index = 0
 
-for pod in pods.items:
+for pvc in pvcs.items:
   tempdict = {}
-  tempdict['title'] = pod.metadata.name
-  tempdict['arg'] = pod.metadata.name
-  tempdict['icon'] = {'path':'./resources/pod.png'}
-
-  for i,cond in enumerate(pod.status.conditions):
-    if cond.type == 'Ready':
-      pod_status_index = i
-
-  tempdict['subtitle'] = 'Ready: {}'.format(pod.status.conditions[pod_status_index].status)
+  tempdict['title'] = pvc.metadata.name
+  tempdict['subtitle'] = 'Status: {}, Storageclass: {}, Volume: {}'.format(pvc.status.phase,pvc.spec.storage_class_name,pvc.spec.volume_name)
+  tempdict['arg'] = pvc.metadata.name
+  tempdict['icon'] = {'path':'./resources/pvc.png'}
   items.append(tempdict)
 
 if len(items) == 0:
   tempdict = {}
-  tempdict['title'] = 'No pods in {}'.format(namespace)
+  tempdict['title'] = 'No PVCs in {}'.format(namespace)
   tempdict['arg'] = 'none'
   items.append(tempdict)
 

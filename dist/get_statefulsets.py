@@ -11,22 +11,22 @@ config.load_kube_config()
 
 # get namespaces
 api = client.AppsV1Api()
-deployments = api.list_namespaced_deployment(namespace)
+statefulsets = api.list_namespaced_stateful_set(namespace)
 
 # create output list
 items = []
 
-for deploy in deployments.items:
+for sts in statefulsets.items:
   tempdict = {}
-  tempdict['title'] = deploy.metadata.name
-  tempdict['subtitle'] = 'Ready: {}/{}'.format(deploy.status.ready_replicas,deploy.status.replicas)
-  tempdict['arg'] = deploy.metadata.name
-  tempdict['icon'] = {'path':'./resources/deploy.png'}
+  tempdict['title'] = sts.metadata.name
+  tempdict['subtitle'] = 'Ready: {}/{}'.format(sts.status.ready_replicas,sts.status.replicas)
+  tempdict['arg'] = sts.metadata.name
+  tempdict['icon'] = {'path':'./resources/sts.png'}
   items.append(tempdict)
 
 if len(items) == 0:
   tempdict = {}
-  tempdict['title'] = 'No deployments in {}'.format(namespace)
+  tempdict['title'] = 'No statefulsets in {}'.format(namespace)
   tempdict['arg'] = 'none'
   items.append(tempdict)
 
