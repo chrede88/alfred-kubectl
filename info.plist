@@ -660,7 +660,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -672,17 +672,17 @@
 				<key>runningsubtext</key>
 				<string>Display nodes</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_nodes</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_nodes.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display nodes</string>
 				<key>title</key>
 				<string>Display nodes</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -747,7 +747,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -759,17 +759,17 @@
 				<key>runningsubtext</key>
 				<string>Display namespaces</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_namespaces</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_namespaces.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display namespaces</string>
 				<key>title</key>
 				<string>Display namespaces</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -877,7 +877,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>68</integer>
 				<key>keyword</key>
 				<string>kube</string>
 				<key>queuedelaycustom</key>
@@ -891,17 +891,17 @@
 				<key>runningsubtext</key>
 				<string>Select a resource type</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py generate_resources</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/generate_resources.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Select a resource type</string>
 				<key>title</key>
 				<string>Query Kubernetes cluster</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -946,7 +946,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -958,17 +958,17 @@
 				<key>runningsubtext</key>
 				<string>Display PVs</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_pvs</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_pvs.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display PVs</string>
 				<key>title</key>
 				<string>Display PVs</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1205,7 +1205,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1217,17 +1217,17 @@
 				<key>runningsubtext</key>
 				<string>Choose namespace</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_namespaces</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_namespaces.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Choose namespace</string>
 				<key>title</key>
 				<string>Choose namespace</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1252,7 +1252,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1264,17 +1264,17 @@
 				<key>runningsubtext</key>
 				<string>Display pods</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_pods</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_pods.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display pods</string>
 				<key>title</key>
 				<string>Display pods</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1416,7 +1416,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1428,17 +1428,17 @@
 				<key>runningsubtext</key>
 				<string>Display deployments</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_deployments</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_deployments.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display deployments</string>
 				<key>title</key>
 				<string>Display deployments</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1488,7 +1488,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1500,17 +1500,17 @@
 				<key>runningsubtext</key>
 				<string>Display configmaps</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_configmaps</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_configmaps.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display configmaps</string>
 				<key>title</key>
 				<string>Display configmaps</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1560,7 +1560,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1572,17 +1572,17 @@
 				<key>runningsubtext</key>
 				<string>Display secrets</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_secrets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_secrets.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display secrets</string>
 				<key>title</key>
 				<string>Display secrets</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1679,7 +1679,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1691,17 +1691,17 @@
 				<key>runningsubtext</key>
 				<string>Display Statefulsets</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_statefulsets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_statefulsets.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display Statefulsets</string>
 				<key>title</key>
 				<string>Display Statefulsets</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -1751,7 +1751,7 @@
 				<key>argumenttype</key>
 				<integer>2</integer>
 				<key>escaping</key>
-				<integer>0</integer>
+				<integer>102</integer>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
@@ -1763,17 +1763,17 @@
 				<key>runningsubtext</key>
 				<string>Display PVCs</string>
 				<key>script</key>
-				<string></string>
+				<string>/usr/bin/python3 dist/kube.py get_pvcs</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>dist/get_pvcs.py</string>
+				<string></string>
 				<key>subtext</key>
 				<string>Display PVCs</string>
 				<key>title</key>
 				<string>Display PVCs</string>
 				<key>type</key>
-				<integer>8</integer>
+				<integer>0</integer>
 				<key>withspace</key>
 				<false/>
 			</dict>
@@ -2130,7 +2130,29 @@
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
-	<array/>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>~/.kube/config</string>
+				<key>placeholder</key>
+				<string>~/.kube/config</string>
+				<key>required</key>
+				<true/>
+				<key>trim</key>
+				<true/>
+			</dict>
+			<key>description</key>
+			<string>Path to your Kubernetes config file</string>
+			<key>label</key>
+			<string>Kube config</string>
+			<key>type</key>
+			<string>textfield</string>
+			<key>variable</key>
+			<string>kube_config_path</string>
+		</dict>
+	</array>
 	<key>version</key>
 	<string>0.0.1</string>
 	<key>webaddress</key>
