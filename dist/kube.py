@@ -30,6 +30,13 @@ def get_namespaces():
   namespaces = api.list_namespace()
 
   items = []
+  # add option for all namespaces (-A)
+  title = 'all namespaces'
+  subtitle = 'all namespaces'
+  arg = 'all_ns'
+  icon = 'ns'
+  items.append(generate_dict(title,subtitle,arg,icon))
+
   for ns in namespaces.items:
     title = ns.metadata.name
     subtitle = ns.status.phase
@@ -90,6 +97,10 @@ def get_pvs():
   
   # pass output to Alfred
   sys.stdout.write(generate_json(items))
+
+##############################
+#### namespaced resources ####
+##############################
 
 def get_pods():
   # generate list of pods in namespace
@@ -163,7 +174,13 @@ def get_configmaps():
   items = []
   for cm in configmaps.items:
     title = cm.metadata.name
-    subtitle = 'Data: {}'.format(len(cm.data))
+
+    if cm.data is None:
+      data_len = 0
+    else:
+      data_len = len(cm.data)
+    
+    subtitle = 'Data: {}'.format(data_len)
     arg = cm.metadata.name
     icon = 'cm'
     items.append(generate_dict(title,subtitle,arg,icon))
@@ -192,7 +209,13 @@ def get_secrets():
   items = []
   for sc in secrets.items:
     title = sc.metadata.name
-    subtitle = 'Type: {}, Data: {}'.format(sc.type,len(sc.data))
+
+    if sc.data is None:
+      data_len = 0
+    else:
+      data_len = len(sc.data)
+
+    subtitle = 'Type: {}, Data: {}'.format(sc.type,data_len)
     arg = sc.metadata.name
     icon = 'secret'
     items.append(generate_dict(title,subtitle,arg,icon))
@@ -269,14 +292,205 @@ def get_pvcs():
   # pass output to Alfred
   sys.stdout.write(generate_json(items))
 
+##########################################
+#### resources across all namesapaces ####
+##########################################
+  
+def get_all_pods():
+  # generate list of pods in all namespaces
+
+  # get pods
+  kubernetes_config()
+  api = client.CoreV1Api()
+  pods = api.list_pod_for_all_namespaces()
+
+  items = []
+  for pod in pods.items:
+    title = pod.metadata.name
+    arg = '{}/{}'.format(pod.metadata.name,pod.metadata.namespace)
+    icon = 'pod'
+    subtitle = 'Status: {}, Namespace: {}, Restarts: {}'.format(pod.status.phase,pod.metadata.namespace,pod.status.container_statuses[0].restart_count)
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No pods found'
+    subtitle = 'No pods found'
+    arg = 'none/none'
+    icon = 'pod'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
+def get_all_deployments():
+  # generate list of deployments in namespace
+
+  # get deployments
+  kubernetes_config()
+  api = client.AppsV1Api()
+  deployments = api.list_deployment_for_all_namespaces()
+
+  items = []
+  for dp in deployments.items:
+    title = dp.metadata.name
+    subtitle = 'Ready: {}/{}, Namespace: {}'.format(dp.status.ready_replicas,dp.status.replicas,dp.metadata.namespace)
+    arg = '{}/{}'.format(dp.metadata.name,dp.metadata.namespace)
+    icon = 'deploy'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No deployments found'
+    subtitle = 'No deployments found'
+    arg = 'none/none'
+    icon = 'deploy'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
+def get_all_configmaps():
+  # generate list of configmaps in namespace
+
+  # get deployments
+  kubernetes_config()
+  api = client.CoreV1Api()
+  configmaps = api.list_config_map_for_all_namespaces()
+  
+  items = []
+  for cm in configmaps.items:
+    title = cm.metadata.name
+
+    if cm.data is None:
+      data_len = 0
+    else:
+      data_len = len(cm.data)
+    
+    subtitle = 'Data: {}, Namespace {}'.format(data_len,cm.metadata.namespace)
+    arg = '{}/{}'.format(cm.metadata.name,cm.metadata.namespace)
+    icon = 'cm'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No configmaps found'
+    subtitle = 'No configmaps found'
+    arg = 'none/none'
+    icon = 'cm'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
+def get_all_secrets():
+  # generate list of secrets in namespace
+
+  # get secrets
+  kubernetes_config()
+  api = client.CoreV1Api()
+  secrets = api.list_secret_for_all_namespaces()
+  
+  items = []
+  for sc in secrets.items:
+    title = sc.metadata.name
+
+    if sc.data is None:
+      data_len = 0
+    else:
+      data_len = len(sc.data)
+
+    subtitle = 'Type: {}, Data: {}'.format(sc.type,data_len)
+    arg = '{}/{}'.format(sc.metadata.name,sc.metadata.namespace)
+    icon = 'secret'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No secrets found'
+    subtitle = 'No secrets found'
+    arg = 'none/none'
+    icon = 'secret'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
+def get_all_statefulsets():
+  # generate list of statefulsets in namespace
+
+  # get statefulsets
+  kubernetes_config()
+  api = client.AppsV1Api()
+  statefulsets = api.list_stateful_set_for_all_namespaces()
+
+  # create output list
+  items = []
+  for sts in statefulsets.items:
+    title = sts.metadata.name
+    subtitle = 'Ready: {}/{}, Namespace: {}'.format(sts.status.ready_replicas,sts.status.replicas, sts.metadata.namespace)
+    arg = '{}/{}'.format(sts.metadata.name,sts.metadata.namespace)
+    icon = 'sts'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No statefulsets found'
+    subtitle = 'No statefulsets found'
+    arg = 'none/none'
+    icon = 'sts'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
+def get_all_pvcs():
+  # generate list of PVCs in namespace
+
+  # get PVCs
+  kubernetes_config()
+  api = client.CoreV1Api()
+  pvcs = api.list_persistent_volume_claim_for_all_namespaces()
+
+  # create output list
+  items = []
+  for pvc in pvcs.items:
+    title = pvc.metadata.name
+    subtitle = 'Status: {}, Namespace: {}, Volume: {},  Storageclass: {}'.format(pvc.status.phase,pvc.metadata.namespace,pvc.spec.volume_name,pvc.spec.storage_class_name)
+    arg = '{}/{}'.format(pvc.metadata.name,pvc.metadata.namespace)
+    icon = 'pvc'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  if len(items) == 0:
+    title = 'No PVCs found'
+    subtitle = 'No PVCs found'
+    arg = 'none/none'
+    icon = 'pvc'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
+
 ###################
 #### Utilities ####
 ###################
+  
+def update_context():
+  # update the variable kube_context
+
+  contexts, active_context = config.list_kube_config_contexts()
+
+  items = []
+  for context in contexts:
+    title = context['name']
+    subtitle = context['name']
+    arg = context['name']
+    icon = 'kubernetes'
+    items.append(generate_dict(title,subtitle,arg,icon))
+
+  # pass output to Alfred
+  sys.stdout.write(generate_json(items))
 
 def kubernetes_config():
-  # import global variable to set path to config
+  # import global variables to set path to config and context
   kube_config_file = os.getenv('kube_config_path')
-  return config.load_kube_config(config_file=kube_config_file)
+  kube_context = os.getenv('kube_context')
+  return config.load_kube_config(config_file=kube_config_file,context=kube_context)
 
 def generate_json(items_list):
   # generate json output from list of dicts
