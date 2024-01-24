@@ -507,7 +507,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>213A975A-E882-42BA-99BA-25F31D534A39</string>
+				<string>A2CCBB13-99A4-4F8F-A4B6-1BB12E050C5F</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -533,19 +533,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>60A0EEE2-093C-40EE-9215-8E32F4244A63</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>9B883927-C9BD-4C34-8BA2-257B74E4D96A</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -584,7 +571,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>60A0EEE2-093C-40EE-9215-8E32F4244A63</string>
+				<string>9818140C-962A-4F97-AB1B-D4E52F1C0459</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -811,6 +798,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>9818140C-962A-4F97-AB1B-D4E52F1C0459</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9B883927-C9BD-4C34-8BA2-257B74E4D96A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>989A834A-50FA-4D76-8097-0643A203E826</key>
 		<array>
 			<dict>
@@ -855,6 +855,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>3436FC76-FBE7-4215-A222-9D74C5A9DDEF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A2CCBB13-99A4-4F8F-A4B6-1BB12E050C5F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>213A975A-E882-42BA-99BA-25F31D534A39</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1138,7 +1151,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>Kubernetes Query</string>
+	<string>alfred-kubectl</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -1208,7 +1221,7 @@
 				<key>runningsubtext</key>
 				<string>Display pods</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_pods</string>
+				<string>/usr/bin/python3 src/kube.py get_pods</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1270,7 +1283,7 @@
 				<key>runningsubtext</key>
 				<string>Display nodes</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_nodes</string>
+				<string>/usr/bin/python3 src/kube.py get_nodes</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1456,7 +1469,7 @@
 				<key>runningsubtext</key>
 				<string>Display deployments</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_deployments</string>
+				<string>/usr/bin/python3 src/kube.py get_deployments</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1561,7 +1574,7 @@
 				<key>runningsubtext</key>
 				<string>Display namespaces</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_namespaces</string>
+				<string>/usr/bin/python3 src/kube.py get_namespaces</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1693,15 +1706,15 @@
 				<key>runningsubtext</key>
 				<string>Select a resource type</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py generate_resources</string>
+				<string>/usr/bin/python3 src/kube.py generate_resources</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
 				<string></string>
 				<key>subtext</key>
-				<string>Select a resource type</string>
+				<string>Get Kubernetes resources</string>
 				<key>title</key>
-				<string>Query Kubernetes cluster</string>
+				<string>Get Kubernetes resources</string>
 				<key>type</key>
 				<integer>0</integer>
 				<key>withspace</key>
@@ -1740,7 +1753,7 @@
 				<key>runningsubtext</key>
 				<string>Display configmaps</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_configmaps</string>
+				<string>/usr/bin/python3 src/kube.py get_configmaps</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1880,7 +1893,7 @@
 				<key>runningsubtext</key>
 				<string>Display PVs</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_pvs</string>
+				<string>/usr/bin/python3 src/kube.py get_pvs</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -1967,7 +1980,7 @@
 				<key>runningsubtext</key>
 				<string>Display secrets</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_secrets</string>
+				<string>/usr/bin/python3 src/kube.py get_secrets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2174,7 +2187,7 @@
 				<key>runningsubtext</key>
 				<string>Choose namespace</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_namespaces</string>
+				<string>/usr/bin/python3 src/kube.py get_namespaces</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2253,7 +2266,7 @@
 				<key>runningsubtext</key>
 				<string>Display Statefulsets</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_statefulsets</string>
+				<string>/usr/bin/python3 src/kube.py get_statefulsets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2288,6 +2301,26 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>71B336D2-5A8C-49D0-B4E4-8810766698B1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>namespace</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>A2CCBB13-99A4-4F8F-A4B6-1BB12E050C5F</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2375,7 +2408,7 @@
 				<key>runningsubtext</key>
 				<string>Display PVCs</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_all_pvcs</string>
+				<string>/usr/bin/python3 src/kube.py get_pvcs</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2643,6 +2676,36 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv
+  set theQuery to item 1 of argv
+  set bundleID to (system attribute "alfred_workflow_bundleid")
+  tell application id "com.runningwithcrayons.Alfred"
+  set configuration "kube_context" to value theQuery in workflow bundleID with exportable
+  end tell
+  return theQuery
+end run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>9818140C-962A-4F97-AB1B-D4E52F1C0459</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>alfredfiltersresults</key>
 				<false/>
 				<key>alfredfiltersresultsmatchmode</key>
@@ -2668,7 +2731,7 @@
 				<key>runningsubtext</key>
 				<string>Set Kubernetes context</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py update_context</string>
+				<string>/usr/bin/python3 src/kube.py update_context</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2710,26 +2773,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict>
-				<key>argument</key>
-				<string>{query}</string>
-				<key>passthroughargument</key>
-				<true/>
-				<key>variables</key>
-				<dict>
-					<key>kube_context</key>
-					<string>{query}</string>
-				</dict>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.argument</string>
-			<key>uid</key>
-			<string>60A0EEE2-093C-40EE-9215-8E32F4244A63</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
@@ -2763,7 +2806,7 @@
 				<key>runningsubtext</key>
 				<string>Display pods</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_pods</string>
+				<string>/usr/bin/python3 src/kube.py get_pods</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2882,7 +2925,7 @@
 				<key>runningsubtext</key>
 				<string>Display deployments</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_deployments</string>
+				<string>/usr/bin/python3 src/kube.py get_deployments</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -2954,7 +2997,7 @@
 				<key>runningsubtext</key>
 				<string>Display configmaps</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_configmaps</string>
+				<string>/usr/bin/python3 src/kube.py get_configmaps</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3026,7 +3069,7 @@
 				<key>runningsubtext</key>
 				<string>Display secrets</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_secrets</string>
+				<string>/usr/bin/python3 src/kube.py get_secrets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3145,7 +3188,7 @@
 				<key>runningsubtext</key>
 				<string>Display Statefulsets</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_statefulsets</string>
+				<string>/usr/bin/python3 src/kube.py get_statefulsets</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3217,7 +3260,7 @@
 				<key>runningsubtext</key>
 				<string>Display PVCs</string>
 				<key>script</key>
-				<string>/usr/bin/python3 dist/kube.py get_pvcs</string>
+				<string>/usr/bin/python3 src/kube.py get_pvcs</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -3257,7 +3300,71 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string>The Alfred-kubectl workflow allows the user to quickly query a kubernetes cluster.</string>
+	<string># Alfred-kubectl
+
+Alfred workflow that can interact with a Kubernetes cluster.
+
+## Installation
+You can install this workflow by downloading the most recent release from [Github](https://github.com/chrede88/alfred-kubectl/releases) or get it through [Alfred Gallery](https://alfred.app/) (not possible yet).
+
+You will be asked to set two variables when first installing the workflow:
+1) The path to your kube configuration file.
+2) The name of the default kubernetes context you want to use.
+
+The default values will work out of the box for most people.
+
+## Usage
+The workflow has two keyword methods:
+1) kube
+2) kube-context
+
+The latter makes it easy to switch context. This can also be done by pressing `Configure Workflow...` under this workflow in Alfred preferences.
+
+The main keyword `kube` will fire a series of api calls which guides the user through retrieving the resources on the cluster.
+
+The supported global resource types are:
+- Node
+- Namespace
+- PV
+
+The supported namespaced resource types are:
+- Pod
+- Deployment
+- Configmap
+- Secret
+- Statefulset
+- PVC
+
+### Action Modifiers
+More details about a resource can be displyed in a Terminal window by hitting &lt;kbd&gt;⌘&lt;/kbd&gt;&lt;kbd&gt;⏎&lt;/kbd&gt; on a selected resource.
+
+Pod resources have two further options:
+1) &lt;kbd&gt;⌥&lt;/kbd&gt;&lt;kbd&gt;⏎&lt;/kbd&gt; displays the logs in a Terminal window.
+2) &lt;kbd&gt;⌃&lt;/kbd&gt;&lt;kbd&gt;⏎&lt;/kbd&gt; opens an interactive session in a pod, using `/bin/sh`, in a Terminal window.
+
+### Workflow screenshots
+
+Inital promt - pick a resource type
+![Screenshot](images/initial_promt.png)
+
+Pick a namespace or choose all namespaces
+![pick namespace](images/pick_ns.png)
+
+Get resources
+![get resources](images/get_resources.png)
+
+
+## Dependencies
+
+This workflow relies on Python 3 and the following python packages (all shipped with the workflow):
+- os
+- sys
+- json
+- kubernetes
+
+The workflow furthermore relies on the `Kubectl` CLI package for fetching details about the resources, pod logs and for executing code in pods (kubectl exec). Both resource details and pod logs will be moved away from kubectl in a later release, but opening interactive sessions into pods can't be done through the python client.
+
+Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubectl-macos/) with Homebrew and from binaries.</string>
 	<key>uidata</key>
 	<dict>
 		<key>08C07DFE-B8E8-4DD1-B8B3-AABB2AF4F22B</key>
@@ -3504,13 +3611,6 @@
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
-		<key>60A0EEE2-093C-40EE-9215-8E32F4244A63</key>
-		<dict>
-			<key>xpos</key>
-			<real>235</real>
-			<key>ypos</key>
-			<real>765</real>
-		</dict>
 		<key>61271F55-3537-4F66-A0B1-0F3144D304C0</key>
 		<dict>
 			<key>xpos</key>
@@ -3532,7 +3632,7 @@
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>735</real>
+			<real>740</real>
 		</dict>
 		<key>6AB91D0F-8F5E-474D-A317-1F8D082A36A0</key>
 		<dict>
@@ -3625,6 +3725,13 @@
 			<key>ypos</key>
 			<real>715</real>
 		</dict>
+		<key>9818140C-962A-4F97-AB1B-D4E52F1C0459</key>
+		<dict>
+			<key>xpos</key>
+			<real>240</real>
+			<key>ypos</key>
+			<real>740</real>
+		</dict>
 		<key>989A834A-50FA-4D76-8097-0643A203E826</key>
 		<dict>
 			<key>xpos</key>
@@ -3649,9 +3756,9 @@
 		<key>9B883927-C9BD-4C34-8BA2-257B74E4D96A</key>
 		<dict>
 			<key>xpos</key>
-			<real>340</real>
+			<real>450</real>
 			<key>ypos</key>
-			<real>735</real>
+			<real>740</real>
 		</dict>
 		<key>9DA04001-05EA-439B-BBEC-4B4F291F670A</key>
 		<dict>
@@ -3666,6 +3773,13 @@
 			<real>785</real>
 			<key>ypos</key>
 			<real>235</real>
+		</dict>
+		<key>A2CCBB13-99A4-4F8F-A4B6-1BB12E050C5F</key>
+		<dict>
+			<key>xpos</key>
+			<real>980</real>
+			<key>ypos</key>
+			<real>565</real>
 		</dict>
 		<key>B0481077-BEF7-4516-B8FC-E65B62298C64</key>
 		<dict>
@@ -3854,7 +3968,7 @@
 		</dict>
 	</array>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://github.com/chrede88/alfred-kubectl</string>
 </dict>

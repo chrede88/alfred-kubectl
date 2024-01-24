@@ -1,0 +1,29 @@
+name: 🐛 Bugs
+description: Report an issue with the workflow
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please check that a similar issue has not already been opened. [View open issues](https://github.com/chrede88/alfred-kubectl/issues)
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe your issue and how to reproduce it, including what you expected to happen.
+    validations:
+      required: true
+  - type: input
+    id: workflow-version
+    attributes:
+      label: Workflow version
+      description: What version of the workfloe are you using?
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Alfred log output
+      description: Please copy and paste any relevant Alfred log output.
+      render: shell
