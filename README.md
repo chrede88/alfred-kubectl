@@ -49,8 +49,8 @@ Pod resources have two further options:
 
 ### Workflow screenshots
 
-Inital promt - pick a resource type
-![initial promt](images/initial_promt.png)
+Inital prompt - pick a resource type
+![initial prompt](images/initial_prompt.png)
 
 Pick a namespace or choose all namespaces
 ![pick namespace](images/pick_ns.png)
