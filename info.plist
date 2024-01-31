@@ -25,7 +25,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>19DB9DA9-756F-46A4-82B4-1E0599E61024</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -65,19 +65,6 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>5EDE162B-5B0F-405B-B975-21B7437723EA</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
-		<key>19DB9DA9-756F-46A4-82B4-1E0599E61024</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -276,7 +263,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8F41CE4A-B2A6-4F4E-8A97-D6559D542123</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -347,19 +334,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>3462C0B5-A1A2-4FC1-A76C-CF670983E2E5</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>37184826-CD04-4D72-8841-EBCD6907D429</key>
 		<array>
 			<dict>
@@ -377,7 +351,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>549B2D38-DB58-4E28-A89F-D9D94C3957C3</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -403,7 +377,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>549B2D38-DB58-4E28-A89F-D9D94C3957C3</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -429,7 +403,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3462C0B5-A1A2-4FC1-A76C-CF670983E2E5</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -451,11 +425,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>549B2D38-DB58-4E28-A89F-D9D94C3957C3</key>
+		<key>54F13C28-46AF-4B43-AAA5-A19207852762</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
+				<string>269075DC-4F82-4089-AAE5-83B044967965</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -481,7 +455,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>8F41CE4A-B2A6-4F4E-8A97-D6559D542123</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -494,7 +468,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>14FECC73-7140-4B06-95E5-3C93BF127679</string>
+				<string>B048D18C-354A-4CC8-AEC7-DFF888EF8252</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -532,7 +506,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -710,11 +684,11 @@
 				<false/>
 			</dict>
 		</array>
-		<key>8F41CE4A-B2A6-4F4E-8A97-D6559D542123</key>
+		<key>92D0915C-9219-4639-8C1E-5E1B113C5541</key>
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
+				<string>C13A726E-A33A-41D0-A071-48686E7FA965</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -815,7 +789,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -881,6 +855,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>2455DB98-07AE-4802-ABB1-283E2E3F4FC2</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>B048D18C-354A-4CC8-AEC7-DFF888EF8252</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>92D0915C-9219-4639-8C1E-5E1B113C5541</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -971,17 +958,17 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>20C8D018-BFB1-4036-B2E4-8D6150568EBD</string>
+				<string>ECC32F81-12A7-4DA7-ADB6-C7B5039FEFCF</string>
 				<key>modifiers</key>
 				<integer>524288</integer>
 				<key>modifiersubtext</key>
-				<string>Pod logs</string>
+				<string>pod logs</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>269075DC-4F82-4089-AAE5-83B044967965</string>
+				<string>54F13C28-46AF-4B43-AAA5-A19207852762</string>
 				<key>modifiers</key>
 				<integer>262144</integer>
 				<key>modifiersubtext</key>
@@ -991,7 +978,7 @@
 			</dict>
 			<dict>
 				<key>destinationuid</key>
-				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
+				<string>FE649CF8-955C-4353-9299-5F1BB8967AD9</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -1004,7 +991,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>19DB9DA9-756F-46A4-82B4-1E0599E61024</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>1048576</integer>
 				<key>modifiersubtext</key>
@@ -1030,7 +1017,7 @@
 		<array>
 			<dict>
 				<key>destinationuid</key>
-				<string>3462C0B5-A1A2-4FC1-A76C-CF670983E2E5</string>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1078,6 +1065,19 @@
 				<false/>
 			</dict>
 		</array>
+		<key>ECC32F81-12A7-4DA7-ADB6-C7B5039FEFCF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>20C8D018-BFB1-4036-B2E4-8D6150568EBD</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ED1DBF43-2520-4B55-9232-6663758BD4CB</key>
 		<array>
 			<dict>
@@ -1104,19 +1104,6 @@
 				<false/>
 			</dict>
 		</array>
-		<key>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</key>
-		<array>
-			<dict>
-				<key>destinationuid</key>
-				<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
-				<key>modifiers</key>
-				<integer>0</integer>
-				<key>modifiersubtext</key>
-				<string></string>
-				<key>vitoclose</key>
-				<false/>
-			</dict>
-		</array>
 		<key>F52173FC-A72C-41C8-AE2E-DA4AE0D58D70</key>
 		<array>
 			<dict>
@@ -1135,6 +1122,19 @@
 			<dict>
 				<key>destinationuid</key>
 				<string>E54696AD-22E1-42BD-9A6E-BDEDBF37ACE0</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE649CF8-955C-4353-9299-5F1BB8967AD9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 				<key>modifiers</key>
 				<integer>0</integer>
 				<key>modifiersubtext</key>
@@ -1186,6 +1186,8 @@
 				<dict>
 					<key>namespace</key>
 					<string>{var:output2}</string>
+					<key>pod</key>
+					<string>{var:output1}</string>
 				</dict>
 			</dict>
 			<key>type</key>
@@ -2430,27 +2432,69 @@
 			<integer>3</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>/usr/bin/python3 src/kube.py get_pod_logs</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
 			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>20C8D018-BFB1-4036-B2E4-8D6150568EBD</string>
+			<string>B048D18C-354A-4CC8-AEC7-DFF888EF8252</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>adduuid</key>
+				<true/>
+				<key>allowemptyfiles</key>
+				<true/>
+				<key>createintermediatefolders</key>
+				<true/>
+				<key>filename</key>
+				<string>/tmp/podlogs/tmplog.txt</string>
+				<key>filetext</key>
+				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
+				<key>relativepathmode</key>
+				<integer>0</integer>
+				<key>type</key>
+				<integer>1</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.writefile</string>
+			<key>uid</key>
+			<string>92D0915C-9219-4639-8C1E-5E1B113C5541</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>kubectl logs {query} -n {var:namespace}</string>
+				<key>openwith</key>
+				<string></string>
+				<key>sourcefile</key>
+				<string></string>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
+			<string>alfred.workflow.action.openfile</string>
 			<key>uid</key>
-			<string>14FECC73-7140-4B06-95E5-3C93BF127679</string>
+			<string>C13A726E-A33A-41D0-A071-48686E7FA965</string>
 			<key>version</key>
-			<integer>1</integer>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2539,6 +2583,14 @@
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>E54696AD-22E1-42BD-9A6E-BDEDBF37ACE0</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.hidealfred</string>
+			<key>uid</key>
+			<string>20C8D018-BFB1-4036-B2E4-8D6150568EBD</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2645,14 +2697,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>269075DC-4F82-4089-AAE5-83B044967965</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>lastpathcomponent</key>
@@ -2723,9 +2767,9 @@ end run</string>
 				<key>queuedelaycustom</key>
 				<integer>3</integer>
 				<key>queuedelayimmediatelyinitially</key>
-				<true/>
+				<false/>
 				<key>queuedelaymode</key>
-				<integer>0</integer>
+				<integer>1</integer>
 				<key>queuemode</key>
 				<integer>1</integer>
 				<key>runningsubtext</key>
@@ -2758,6 +2802,26 @@ end run</string>
 				<key>argument</key>
 				<string>{query}</string>
 				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>pod</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>ECC32F81-12A7-4DA7-ADB6-C7B5039FEFCF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
 				<true/>
 				<key>variables</key>
 				<dict>
@@ -2769,14 +2833,6 @@ end run</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>88AA8AE3-5122-4421-B8C7-B95DE263BF6F</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2826,6 +2882,26 @@ end run</string>
 			<string>D37761DA-F820-465F-B456-AA3C001A3AB3</string>
 			<key>version</key>
 			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>pod</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>54F13C28-46AF-4B43-AAA5-A19207852762</string>
+			<key>version</key>
+			<integer>1</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -2895,7 +2971,27 @@ end run</string>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
-			<string>549B2D38-DB58-4E28-A89F-D9D94C3957C3</string>
+			<string>269075DC-4F82-4089-AAE5-83B044967965</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<false/>
+				<key>variables</key>
+				<dict>
+					<key>pod</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>FE649CF8-955C-4353-9299-5F1BB8967AD9</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -2964,10 +3060,57 @@ end run</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>script</key>
+				<string>kubectl describe {var:resource} {query} -n {var:namespace}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.terminalcommand</string>
+			<key>uid</key>
+			<string>9B40307F-1084-4F80-8460-139FAD473A41</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>conditions</key>
+				<array>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>none</string>
+						<key>outputlabel</key>
+						<string>none</string>
+						<key>uid</key>
+						<string>13376C18-D98F-4D2B-9E27-CC2EF94DC6AC</string>
+					</dict>
+				</array>
+				<key>elselabel</key>
+				<string>resource found</string>
+				<key>hideelse</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.conditional</string>
+			<key>uid</key>
+			<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
 			<key>type</key>
 			<string>alfred.workflow.utility.hidealfred</string>
 			<key>uid</key>
-			<string>19DB9DA9-756F-46A4-82B4-1E0599E61024</string>
+			<string>532CF751-AA86-4CF3-A9D0-754C13A59D4D</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3036,14 +3179,6 @@ end run</string>
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>8F41CE4A-B2A6-4F4E-8A97-D6559D542123</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
 			<key>config</key>
 			<dict>
 				<key>alfredfiltersresults</key>
@@ -3093,53 +3228,6 @@ end run</string>
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>escaping</key>
-				<integer>0</integer>
-				<key>script</key>
-				<string>kubectl describe {var:resource} {query} -n {var:namespace}</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.terminalcommand</string>
-			<key>uid</key>
-			<string>9B40307F-1084-4F80-8460-139FAD473A41</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>conditions</key>
-				<array>
-					<dict>
-						<key>inputstring</key>
-						<string>{query}</string>
-						<key>matchcasesensitive</key>
-						<false/>
-						<key>matchmode</key>
-						<integer>0</integer>
-						<key>matchstring</key>
-						<string>none</string>
-						<key>outputlabel</key>
-						<string>none</string>
-						<key>uid</key>
-						<string>13376C18-D98F-4D2B-9E27-CC2EF94DC6AC</string>
-					</dict>
-				</array>
-				<key>elselabel</key>
-				<string>resource found</string>
-				<key>hideelse</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.conditional</string>
-			<key>uid</key>
-			<string>5069C067-4997-4F3D-9F6C-9FEDB066CAB5</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
 				<key>argument</key>
 				<string>{var:resource}s in {query}</string>
 				<key>passthroughargument</key>
@@ -3151,14 +3239,6 @@ end run</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>CE351251-BE4F-4D9D-B1EC-9364C70E7D62</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3223,14 +3303,6 @@ end run</string>
 			<string>alfred.workflow.utility.argument</string>
 			<key>uid</key>
 			<string>E0FEF3F7-91E9-4C56-A297-CFA2E99977C4</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>type</key>
-			<string>alfred.workflow.utility.hidealfred</string>
-			<key>uid</key>
-			<string>3462C0B5-A1A2-4FC1-A76C-CF670983E2E5</string>
 			<key>version</key>
 			<integer>1</integer>
 		</dict>
@@ -3316,7 +3388,7 @@ The default values will work out of the box for most people.
 ## Usage
 The workflow has two keyword methods:
 1) kube
-2) kube-context
+2) k8s-context
 
 The latter makes it easy to switch context. This can also be done by pressing `Configure Workflow...` under this workflow in Alfred preferences.
 
@@ -3402,20 +3474,6 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>565</real>
 		</dict>
-		<key>14FECC73-7140-4B06-95E5-3C93BF127679</key>
-		<dict>
-			<key>xpos</key>
-			<real>2200</real>
-			<key>ypos</key>
-			<real>680</real>
-		</dict>
-		<key>19DB9DA9-756F-46A4-82B4-1E0599E61024</key>
-		<dict>
-			<key>xpos</key>
-			<real>1850</real>
-			<key>ypos</key>
-			<real>990</real>
-		</dict>
 		<key>19FD766E-2763-4B4A-8B30-71C28A4997DA</key>
 		<dict>
 			<key>xpos</key>
@@ -3433,9 +3491,9 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 		<key>20C8D018-BFB1-4036-B2E4-8D6150568EBD</key>
 		<dict>
 			<key>xpos</key>
-			<real>1860</real>
+			<real>1905</real>
 			<key>ypos</key>
-			<real>660</real>
+			<real>695</real>
 		</dict>
 		<key>213A975A-E882-42BA-99BA-25F31D534A39</key>
 		<dict>
@@ -3463,9 +3521,9 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 		<key>269075DC-4F82-4089-AAE5-83B044967965</key>
 		<dict>
 			<key>xpos</key>
-			<real>1860</real>
+			<real>1905</real>
 			<key>ypos</key>
-			<real>725</real>
+			<real>860</real>
 		</dict>
 		<key>2CB421B8-CB46-4C18-9C7D-3B07A45A46AF</key>
 		<dict>
@@ -3509,13 +3567,6 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>205</real>
 		</dict>
-		<key>3462C0B5-A1A2-4FC1-A76C-CF670983E2E5</key>
-		<dict>
-			<key>xpos</key>
-			<real>1850</real>
-			<key>ypos</key>
-			<real>1375</real>
-		</dict>
 		<key>37184826-CD04-4D72-8841-EBCD6907D429</key>
 		<dict>
 			<key>xpos</key>
@@ -3551,7 +3602,7 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>xpos</key>
 			<real>2005</real>
 			<key>ypos</key>
-			<real>1180</real>
+			<real>1020</real>
 		</dict>
 		<key>5310D922-19C7-4AFC-98CD-FF9DAD3C1407</key>
 		<dict>
@@ -3563,16 +3614,16 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 		<key>532CF751-AA86-4CF3-A9D0-754C13A59D4D</key>
 		<dict>
 			<key>xpos</key>
-			<real>1860</real>
+			<real>1905</real>
 			<key>ypos</key>
-			<real>790</real>
+			<real>1030</real>
 		</dict>
-		<key>549B2D38-DB58-4E28-A89F-D9D94C3957C3</key>
+		<key>54F13C28-46AF-4B43-AAA5-A19207852762</key>
 		<dict>
 			<key>xpos</key>
-			<real>1855</real>
+			<real>1580</real>
 			<key>ypos</key>
-			<real>865</real>
+			<real>810</real>
 		</dict>
 		<key>58D1EB57-2AB1-47AC-9147-7E6B0794D59E</key>
 		<dict>
@@ -3685,6 +3736,8 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 		</dict>
 		<key>87A45DED-12FA-48D9-9A86-8A13EB2DA65E</key>
 		<dict>
+			<key>note</key>
+			<string>Main workflow keyword</string>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
@@ -3711,12 +3764,12 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>410</real>
 		</dict>
-		<key>8F41CE4A-B2A6-4F4E-8A97-D6559D542123</key>
+		<key>92D0915C-9219-4639-8C1E-5E1B113C5541</key>
 		<dict>
 			<key>xpos</key>
-			<real>1850</real>
+			<real>2300</real>
 			<key>ypos</key>
-			<real>1115</real>
+			<real>680</real>
 		</dict>
 		<key>94303098-4A83-49B9-AC59-7DDA23D16774</key>
 		<dict>
@@ -3742,9 +3795,9 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 		<key>9B40307F-1084-4F80-8460-139FAD473A41</key>
 		<dict>
 			<key>xpos</key>
-			<real>2210</real>
+			<real>2200</real>
 			<key>ypos</key>
-			<real>1175</real>
+			<real>1015</real>
 		</dict>
 		<key>9B73CE9E-9E98-4AB7-8483-6FAA52BDD315</key>
 		<dict>
@@ -3788,6 +3841,13 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>380</real>
 		</dict>
+		<key>B048D18C-354A-4CC8-AEC7-DFF888EF8252</key>
+		<dict>
+			<key>xpos</key>
+			<real>2145</real>
+			<key>ypos</key>
+			<real>680</real>
+		</dict>
 		<key>B0B25F69-6D8D-449D-9603-FAAA9CA325F1</key>
 		<dict>
 			<key>xpos</key>
@@ -3801,6 +3861,13 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<real>585</real>
 			<key>ypos</key>
 			<real>355</real>
+		</dict>
+		<key>C13A726E-A33A-41D0-A071-48686E7FA965</key>
+		<dict>
+			<key>xpos</key>
+			<real>2455</real>
+			<key>ypos</key>
+			<real>680</real>
 		</dict>
 		<key>C7831C9F-484A-47CF-BDEF-CC7B15679DE7</key>
 		<dict>
@@ -3886,6 +3953,13 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
+		<key>ECC32F81-12A7-4DA7-ADB6-C7B5039FEFCF</key>
+		<dict>
+			<key>xpos</key>
+			<real>1580</real>
+			<key>ypos</key>
+			<real>750</real>
+		</dict>
 		<key>ED1DBF43-2520-4B55-9232-6663758BD4CB</key>
 		<dict>
 			<key>xpos</key>
@@ -3900,13 +3974,6 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<key>ypos</key>
 			<real>75</real>
 		</dict>
-		<key>F4E46D2B-4637-4397-AD40-E6455C9D5CB2</key>
-		<dict>
-			<key>xpos</key>
-			<real>1850</real>
-			<key>ypos</key>
-			<real>1245</real>
-		</dict>
 		<key>F52173FC-A72C-41C8-AE2E-DA4AE0D58D70</key>
 		<dict>
 			<key>xpos</key>
@@ -3920,6 +3987,13 @@ Kubectl can be [installed](https://kubernetes.io/docs/tasks/tools/install-kubect
 			<real>1575</real>
 			<key>ypos</key>
 			<real>690</real>
+		</dict>
+		<key>FE649CF8-955C-4353-9299-5F1BB8967AD9</key>
+		<dict>
+			<key>xpos</key>
+			<real>1580</real>
+			<key>ypos</key>
+			<real>870</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>

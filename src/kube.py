@@ -374,6 +374,22 @@ def get_pvcs():
   # pass output to Alfred
   sys.stdout.write(generate_json(items))
 
+##################
+#### Pod logs ####
+##################
+  
+def get_pod_logs():
+  # choosen namespace
+  namespace = os.getenv('namespace')
+  pod = os.getenv('pod')
+
+  # get pods
+  kubernetes_config()
+  api = client.CoreV1Api()
+  log = api.read_namespaced_pod_log(pod,namespace)
+
+  sys.stdout.write(log)
+
 ###################
 #### Utilities ####
 ###################
