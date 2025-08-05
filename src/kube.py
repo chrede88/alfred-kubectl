@@ -10,7 +10,7 @@ from kubernetes import client, config
 def generate_resources():
   # generate json with supported kubernetes resources
   # for the initial script filter
-  
+
   # resources
   resources = ['pod','deployment','statefulset','node','namespace','configmap','secret','pv','pvc']
   icons = ['pod','deploy','sts','node','ns','cm','secret','pv','pvc']
@@ -102,7 +102,7 @@ def get_pvs():
     arg = 'none'
     icon = 'pv'
     items.append(generate_dict(title,subtitle,arg,icon))
-  
+
   # pass output to Alfred
   sys.stdout.write(generate_json(items))
 
@@ -153,7 +153,7 @@ def get_pods():
 
 def get_deployments():
   # generate list of deployments in namespace
-  
+
   # choosen namespace
   namespace = os.getenv('namespace')
 
@@ -194,7 +194,7 @@ def get_deployments():
 
 def get_configmaps():
   # generate list of configmaps in namespace
-  
+
   # choosen namespace
   namespace = os.getenv('namespace')
 
@@ -205,7 +205,7 @@ def get_configmaps():
     configmaps = api.list_config_map_for_all_namespaces()
   else:
     configmaps = api.list_namespaced_config_map(namespace)
-  
+
   items = []
   for cm in configmaps.items:
     title = cm.metadata.name
@@ -215,7 +215,7 @@ def get_configmaps():
       data_len = 0
     else:
       data_len = len(cm.data)
-    
+
     if namespace == 'all_ns':
       subtitle = 'Data: {}, Namespace {}'.format(data_len,cm.metadata.namespace)
       arg = '{}/{}'.format(cm.metadata.name,cm.metadata.namespace)
@@ -241,7 +241,7 @@ def get_configmaps():
 
 def get_secrets():
   # generate list of secrets in namespace
-  
+
   # choosen namespace
   namespace = os.getenv('namespace')
 
@@ -252,7 +252,7 @@ def get_secrets():
     secrets = api.list_secret_for_all_namespaces()
   else:
     secrets = api.list_namespaced_secret(namespace)
-  
+
   items = []
   for sc in secrets.items:
     title = sc.metadata.name
@@ -288,7 +288,7 @@ def get_secrets():
 
 def get_statefulsets():
   # generate list of statefulsets in namespace
-  
+
   # choosen namespace
   namespace = os.getenv('namespace')
 
@@ -312,7 +312,7 @@ def get_statefulsets():
     else:
       subtitle = 'Ready: {}/{}'.format(sts.status.ready_replicas,sts.status.replicas)
       arg = sts.metadata.name
-    
+
     items.append(generate_dict(title,subtitle,arg,icon))
 
   if len(items) == 0:
@@ -332,7 +332,7 @@ def get_statefulsets():
 
 def get_pvcs():
   # generate list of PVCs in namespace
-  
+
   # choosen namespace
   namespace = os.getenv('namespace')
 
@@ -356,7 +356,7 @@ def get_pvcs():
     else:
       subtitle = 'Status: {}, Storageclass: {}, Volume: {}'.format(pvc.status.phase,pvc.spec.storage_class_name,pvc.spec.volume_name)
       arg = pvc.metadata.name
-    
+
     items.append(generate_dict(title,subtitle,arg,icon))
 
   if len(items) == 0:
@@ -377,7 +377,7 @@ def get_pvcs():
 ##################
 #### Pod logs ####
 ##################
-  
+
 def get_pod_logs():
   # choosen namespace
   namespace = os.getenv('namespace')
@@ -393,7 +393,7 @@ def get_pod_logs():
 ###################
 #### Utilities ####
 ###################
-  
+
 def update_context():
   # update the variable kube_context
   kube_config_file = os.getenv('kube_config_path')
